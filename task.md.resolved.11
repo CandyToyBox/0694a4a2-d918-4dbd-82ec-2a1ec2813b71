@@ -1,0 +1,25 @@
+# Task: Build WaveWarz Analytics Dashboard
+
+- [x] Initialize React 19 + TypeScript Project <!-- id: 0 -->
+    - [x] Create project structure in `scratch/wavewarz-analytics` <!-- id: 1 -->
+    - [x] Install dependencies (`@solana/web3.js`, `recharts`, `lucide-react`, `tailwindcss`) <!-- id: 2 -->
+- [x] Implement Blockchain Service Layer <!-- id: 3 -->
+    - [x] Create PDA Derivation Utilities (u64 LE handling) <!-- id: 4 -->
+    - [x] Implement Zero-Copy DataView Parser for Battle Accounts <!-- id: 5 -->
+    - [x] Setup Helius RPC Integration <!-- id: 6 -->
+- [x] Implement Analytics Logic Engine <!-- id: 7 -->
+    - [x] Battle Volume Estimation (Helius NativeTransfers) <!-- id: 8 -->
+    - [x] ROI/Settlement Calculator (Distribution logic) <!-- id: 9 -->
+- [x] Build UI Components <!-- id: 10 -->
+    - [x] Live Battle Dashboard w/ Pagination <!-- id: 11 -->
+    - [x] Global Program Stats (TVL, Volume, Active) <!-- id: 12 -->
+    - [x] Wallet Claims Checker Tab <!-- id: 16 -->
+- [x] Verify and Deploy <!-- id: 13 -->
+    - [x] Verify against known battle IDs <!-- id: 14 -->
+    - [x] Verify against known battle IDs <!-- id: 14 -->
+    - [x] Prepare for Vercel Deployment <!-- id: 15 -->
+- [/] Advanced Statistics Aggregation <!-- id: 17 -->
+    - [ ] Calculate Total Artist Payouts (from split logic) <!-- id: 18 -->
+    - [ ] Calculate Total Donations/Fees (from split logic) <!-- id: 19 -->
+    - [ ] Calculate Unique Artist Count <!-- id: 20 -->
+    - [ ] Update Global Stats UI <!-- id: 21 -->

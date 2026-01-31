@@ -1,0 +1,7 @@
+# Task: Run WaveWarz Volume Analysis Scripts
+
+- [ ] Read and understand the script contents <!-- id: 0 -->
+- [ ] Install necessary dependencies (if any) <!-- id: 1 -->
+- [ ] Run `get_wavewarz_volume_1.py` <!-- id: 2 -->
+- [ ] Run `get_total_wavewarz_volume_1.js` <!-- id: 3 -->
+- [ ] Update or verify `WAVEWARZ_VOLUME_ANALYSIS_1.md` with results <!-- id: 4 -->

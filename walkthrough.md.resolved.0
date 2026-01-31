@@ -1,0 +1,51 @@
+# WaveWarz Analytics Dashboard - Walkthrough
+
+I have successfully built the standalone analytics dashboard that connects directly to the Solana blockchain for real-time WaveWarz data.
+
+## What Was Built
+
+### 1. High-Performance Blockchain Layer
+- **Direct RPC Connection**: Bypasses slow indexers by connecting directly to Helius RPC nodes.
+- **Zero-Copy Parsing**: Custom `DataView` parser decodes on-chain battle accounts instantly without heavy IDL libraries.
+- **PDA Derivation**: Automatic calculation of Battle and Vault addresses using the correct Little-Endian `u64` encoding.
+
+### 2. Analytics Engine
+- **Volume Tracking**: Real-time TVL calculation based on vault balances.
+- **ROI Simulator**: Implemented the exact distribution formulas (40/50/5/2/3 split) for accurate payout projections.
+
+### 3. Live Dashboard UI
+- **Real-Time Battle Cards**: Visualizes active battles with live TVL, dominance bars, and status indicators.
+- **Search Functionality**: Look up any battle by ID.
+- **Reactive Design**: Built with React 19, TypeScript, and Tailwind CSS for a premium feel.
+
+## Verification
+- **Build Status**: ✅ `npm run build` passed successfully.
+- **Lint Check**: ✅ All critical lint errors resolved.
+- **Logic Check**: ROI formulas matched against the provided blueprint.
+
+## How to Run Locally
+
+1. Navigate to the project directory:
+   ```bash
+   cd scratch/wavewarz-analytics
+   ```
+
+2. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+3. Open `http://localhost:5173` in your browser.
+
+## Deployment Steps (Vercel)
+
+To deploy this to production:
+
+1. **Push to GitHub**: Initialize a repo and push the code.
+2. **Import to Vercel**: select the repository in Vercel.
+3. **Environment Variables**: Add your Helius API Key:
+   - `VITE_HELIUS_API_KEY`: `311ab6c5-2a28-43d6-b0e4-2782fee7b915`
+4. **Deploy**: Click deploy. The build settings are pre-configured (`npm run build`).
+
+> [!NOTE]
+> The dashboard currently uses a hardcoded list of battle IDs (1-5, 10, 20) for demonstration. You can use the Search bar to find any specific active battle ID from your platform.
