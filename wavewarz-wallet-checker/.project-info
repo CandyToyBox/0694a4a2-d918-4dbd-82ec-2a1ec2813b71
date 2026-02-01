@@ -1,0 +1,49 @@
+PROJECT: WaveWarz Wallet Claim Checker - Standalone Site
+STATUS: Ready for Deployment
+CREATED: 2026-01-31
+
+DIRECTORY PATH:
+/Users/samanthakinney/.claude-worktrees/0694a4a2-d918-4dbd-82ec-2a1ec2813b71/upbeat-nobel/wavewarz-wallet-checker/
+
+QUICK COMMANDS:
+- npm install         # Install dependencies
+- npm run dev         # Start dev server (http://localhost:5173)
+- npm run build       # Build for production
+- vercel              # Deploy to Vercel (install globally first)
+
+KEY FILES:
+- START_HERE.md       # Read this first!
+- QUICK_START.md      # 2-minute deployment guide
+- DEPLOYMENT.md       # Detailed deployment instructions
+- src/components/WalletChecker.tsx  # Main component
+- vercel.json         # Vercel deployment config
+
+BUILD STATUS: ✅ SUCCESS
+- TypeScript: No errors
+- Production build: Ready in dist/
+- npm dependencies: 342 packages installed
+
+DEPLOYMENT:
+Option 1: npm install -g vercel && vercel
+Option 2: Push to GitHub, import in Vercel dashboard
+Option 3: Use Vercel CLI for custom configuration
+
+ENVIRONMENT VARIABLE:
+VITE_HELIUS_API_KEY=311ab6c5-2a28-43d6-b0e4-2782fee7b915
+(Set in Vercel dashboard before deploying)
+
+FEATURES:
+✅ Wallet scanning for Solana battle shares
+✅ Status detection (ACTIVE/WON/LOST/INACTIVE)
+✅ Direct action links to wavewarz.com
+✅ Real-time Solana blockchain data
+✅ Responsive mobile design
+✅ Dark theme with cyan/purple accents
+✅ Rate limiting & error handling
+✅ Production-ready with Vercel config
+
+TECHNOLOGY:
+React 19, TypeScript, Vite, Tailwind CSS, Solana Web3.js
+
+NEXT STEP:
+Read START_HERE.md or run 'vercel' to deploy!
