@@ -3,14 +3,5 @@
   "devCommand": "vite",
   "installCommand": "npm install",
   "framework": "vite",
-  "outputDirectory": "./dist",
-  "name": "wavewarz_wallet_checker",
-  "env": [
-    {
-      "key": "VITE_HELIUS_API_KEY",
-      "description": "Helius RPC API key for Solana mainnet access",
-      "value": "",
-      "type": "secret"
-    }
-  ]
+  "outputDirectory": "./dist"
 }

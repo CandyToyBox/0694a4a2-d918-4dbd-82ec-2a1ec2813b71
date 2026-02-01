@@ -1,23 +1,34 @@
-import { Activity } from 'lucide-react';
 import WalletChecker from './components/WalletChecker';
 
 function App() {
     return (
-        <div className="min-h-screen bg-slate-950 text-white p-4 md:p-8">
-            <header className="mb-10 flex flex-col md:flex-row md:items-center gap-4 border-b border-slate-800 pb-6">
-                <div className="flex items-center gap-3">
-                    <div className="bg-gradient-to-tr from-cyan-500 to-purple-600 p-2 rounded-lg shadow-lg shadow-purple-500/20">
-                        <Activity className="w-8 h-8 text-white" />
-                    </div>
-                    <div>
-                        <h1 className="text-3xl font-bold bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
-                            WaveWarz Wallet Checker
-                        </h1>
-                        <p className="text-slate-400 text-sm">Check your claimable battle shares and winnings</p>
-                    </div>
+        <div className="min-h-screen bg-black text-white p-4 md:p-8">
+            <header className="mb-10 flex flex-col items-center gap-6 border-b border-cyan-500/30 pb-6">
+                {/* WaveWarz Logo */}
+                <img
+                    src="/logo.png"
+                    alt="WaveWarz"
+                    className="h-20 md:h-28 object-contain drop-shadow-lg"
+                    style={{
+                        filter: 'drop-shadow(0 0 20px rgba(34, 211, 238, 0.5))'
+                    }}
+                    onError={(e) => {
+                        // Fallback if logo doesn't exist
+                        (e.target as HTMLImageElement).style.display = 'none';
+                    }}
+                />
+
+                {/* Title and Description */}
+                <div className="text-center">
+                    <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-cyan-400 via-green-400 to-cyan-300 bg-clip-text text-transparent mb-2">
+                        Wallet Checker
+                    </h1>
+                    <p className="text-cyan-300/70 text-sm md:text-base">Check your claimable battle shares and winnings</p>
                 </div>
-                <div className="md:ml-auto flex items-center gap-3 text-xs text-slate-500 font-mono">
-                    <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+
+                {/* Status Indicator */}
+                <div className="flex items-center gap-2 text-xs text-green-400 font-mono border border-green-500/30 rounded-full px-4 py-2 bg-green-500/5">
+                    <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
                     CONNECTED: SOLANA MAINNET
                 </div>
             </header>
