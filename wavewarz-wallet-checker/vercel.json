@@ -4,6 +4,7 @@
   "installCommand": "npm install",
   "framework": "vite",
   "outputDirectory": "./dist",
+  "name": "wavewarz_wallet_checker",
   "env": [
     {
       "key": "VITE_HELIUS_API_KEY",
